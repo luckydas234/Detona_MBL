@@ -1,41 +1,44 @@
-package com.weather.assignment.Weather;
+package com.AutomationAsginmnt.Apps;
 
 import org.testng.annotations.Test;
+
+import com.AutomationAsignment.utility.DefaultDriverManager;
+import com.AutomationAsignment.utility.TestClassUtil;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 /**
  * @author Biswa
  *
  */
-public class WeatherTest {
+public class AutomationPracticeTest extends TestClassUtil {
 	static RemoteWebDriver driver;
-	static String sTempinCelcius;
-	static String sTempinFarnhite;
-	static WeatherPOJO weather;
+
+	static AutomationPracticePOJO Practicepojo;
 
 	@BeforeTest
-	public void setup() throws Exception {
+	public void launchApp() throws Exception {
 		driver = new DefaultDriverManager().getDriver();
-		weather = new WeatherPOJO();
-		new NdtvController().launchApplication(driver);
+		Practicepojo = new AutomationPracticePOJO();
+		new PracticeController().launchApplication(driver);
 	}
 
 	@Test
-	public void tempCompareTest() throws Exception {
-
-		new NdtvController().tempratureSearchCityController(driver, weather, sTempinFarnhite);
-
-		new OpenWeatherController().tempratureSearchByCityNameController(sTempinCelcius, weather);
-
-		new WeatherComparator().compareCityTemprature(weather);
+	public void testAutomationPracticeTest() throws Exception {
+		String testCasename = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		test = extent.createTest(testCasename);
+		new PracticeController().ProductListingFlow(driver, test);
+		new PracticeController().ProductDetailsFlow(driver, Practicepojo, test);
+		new PracticeController().AuthenticationFlow(driver, Practicepojo, test);
+		;
 	}
 
 	@AfterTest
 	public void teardown() {
-		driver.quit();
+		 driver.quit();
 	}
 
 }

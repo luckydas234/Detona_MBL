@@ -1,4 +1,4 @@
-package com.weather.assignment.Weather;
+package com.AutomationAsginmnt.Apps;
 
 import java.util.List;
 
@@ -6,16 +6,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
-
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
-public class NdtvWeatherPages {
+import com.AutomationAsignment.utility.ActionBot;
+import com.AutomationAsignment.utility.ConfigReader;
+
+public class ProductDetailPage {
 
 	RemoteWebDriver driver;
 	int timeOutPeriod;
 	/* All WebElements are identified by @FindBy annotation */
 
-	public NdtvWeatherPages(RemoteWebDriver driver) {
+	public ProductDetailPage(RemoteWebDriver driver) {
 
 		this.driver = driver;
 
@@ -26,64 +30,64 @@ public class NdtvWeatherPages {
 
 	}
 
-	@FindBy(xpath = "//input[@id='searchBox']")
-	WebElement searchBoxTextBox;
+	
 
-	@FindBy(xpath = "//div[@class='message']/label/input")
-	List<WebElement> cityCheckBox;
+	@FindBy(xpath= "//span[@id='our_price_display']")
+	WebElement ProductValue;
+	
+	@FindBy(xpath= "//select[@id='group_1']")
+	WebElement SizeDropdown;
 
-	@FindBy(xpath = "//span[@class='tempRedText']")
-	WebElement tempCentigradeLabel;
 
-	@FindBy(xpath = "//span[@class='tempWhiteText']")
-	WebElement tempFarenhiteLabel;
+	@FindBy(xpath= "//span[normalize-space()='Add to cart']")
+	WebElement AddToCartButton;
 
-	@FindBy(xpath = "//div[@class='cityText']")
-	WebElement cityNameOnMapLabel;
+	
+	@FindBy(xpath = "//span[normalize-space()='Proceed to checkout']")
+	WebElement Proceed_toCheckOutBtn;
+	
+	
+	@FindBy(xpath = "//a[@class='button btn btn-default standard-checkout button-medium']//span[contains(text(),'Proceed to checkout')]")
+	WebElement Proceed_toCheckOutBtn2;
+	
+	
+	public String getProductPrice() throws Exception {
 
-	public void uncheckExistingCities() throws Exception {
+	 ActionBot.waitForElementToBeDisplayed(driver, ProductValue, timeOutPeriod);
+	 return ProductValue.getText()
+;
+	}
 
-		ActionBot.waitForElementToBeDisplayed(driver, cityCheckBox.get(0), timeOutPeriod);
-		for (WebElement wb : cityCheckBox) {
-			if (wb.isSelected()) {
-				ActionBot.focusAndclick(driver, wb);
-			}
-		}
+	public void changeSize(String size) throws Exception {
+
+		Select sel=new Select(SizeDropdown);
+		sel.selectByVisibleText(size);
+		
+	}
+    
+	public void clickOnAddtoCartButton() throws Exception {
+
+		ActionBot.waitForElementToBeDisplayed(driver, AddToCartButton, timeOutPeriod);
+		ActionBot.focusAndclick(driver, AddToCartButton);
+		
+
+	}
+	
+	public void clickOnProceedCheckout() throws Exception {
+
+		ActionBot.waitForElementToBeDisplayed(driver, Proceed_toCheckOutBtn, timeOutPeriod);
+		ActionBot.focusAndclick(driver, Proceed_toCheckOutBtn);
+		
 
 	}
 
-	public void searchRequiredCity(String sInput) throws Exception {
-		ActionBot.enter_Text(driver, searchBoxTextBox, sInput);
+	
+	public void clickOnProceedCheckout2() throws Exception {
+
+		ActionBot.waitForElementToBeDisplayed(driver, Proceed_toCheckOutBtn2, timeOutPeriod);
+		ActionBot.focusAndclick(driver, Proceed_toCheckOutBtn2);
+		
 
 	}
-
-	public void checkRequiredCity(String sInput) throws Exception {
-		WebElement wb = driver.findElement(By.xpath("//*[@id='messages']//label[@for='" + sInput + "']/input"));
-
-		ActionBot.focusAndclick(driver, wb);
-	}
-
-	public String getTempInCentigrade() throws Exception {
-
-		ActionBot.waitForElementToBeDisplayed(driver, tempCentigradeLabel, timeOutPeriod);
-		return tempCentigradeLabel.getText();
-
-	}
-
-	public String getTempInFarenhite() throws Exception {
-
-		ActionBot.waitForElementToBeDisplayed(driver, tempFarenhiteLabel, timeOutPeriod);
-		return tempFarenhiteLabel.getText();
-
-	}
-
-	public String getCityNameOnMap() throws Exception {
-
-		ActionBot.waitForElementToBeDisplayed(driver, cityNameOnMapLabel, timeOutPeriod);
-		return cityNameOnMapLabel.getText();
-
-	}
-
-	// div[@class="message"]/label[@for='Bengaluru']/input
 
 }

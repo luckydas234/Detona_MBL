@@ -1,11 +1,9 @@
-package com.weather.assignment.Weather;
+package com.AutomationAsignment.utility;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Platform;
@@ -26,7 +24,7 @@ public class DefaultDriverManager {
 	private String hubURL = null;
 	private String version = null;
 	private String browser = null;
-	
+
 	private boolean configLoaded = false;
 
 	public RemoteWebDriver getDriver() throws Exception {
@@ -150,11 +148,9 @@ public class DefaultDriverManager {
 		version = ConfigReader.getProperty("config.properties", "VERSION");
 
 		browser = ConfigReader.getProperty("config.properties", "BROWSER");
-		
-		
 
 		configLoaded = true;
 
 	}
-	
+
 }
