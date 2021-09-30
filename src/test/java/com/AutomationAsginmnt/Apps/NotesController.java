@@ -11,7 +11,6 @@ import com.aventstack.extentreports.Status;
 
 public class NotesController {
 	static Logger logger = Logger.getLogger(NotesController.class);
-	private String appURL = null;
 	NotesPOJO notespojo = new NotesPOJO();
 
 	NotesController() {
@@ -308,12 +307,12 @@ public class NotesController {
 			SettingsPage sp = new SettingsPage(driver);
 			lp.clickOnHumbergerMenu();
 			lp.clickOnSettingsMenu();
-			// sp.clickOnLabel("Data");
-			// sp.clickOnLabel("Erase all data");
-			// sp.clickOnConfirmMenu();
-			// Assert.assertEquals(true, lp.getEmptylist(driver));
+			sp.clickOnLabel("Data");
+			sp.clickOnLabel("Erase all data");
+			sp.clickOnConfirmMenu();
+			Assert.assertEquals(true, lp.getEmptylist(driver));
 			test.log(Status.PASS, "No existing notes present");
-			// lp.clickonBackButton();
+			lp.clickonBackButton();
 
 		} catch (Exception e) {
 			throw new Exception("Error occured in SettingsFlowTest" + e.getMessage());
@@ -327,7 +326,6 @@ public class NotesController {
 				logger.info("Start Testcase ==>TapToCrashFlowTest");
 				test.log(Status.INFO, "In Landing Page");
 				LandingPage lp = new LandingPage(driver);
-				SettingsPage sp = new SettingsPage(driver);
 				lp.clickOnHumbergerMenu();
 				lp.clickOnTapToCrashMenu();
 				Assert.assertEquals(true, lp.getEmptylist(driver));
@@ -341,28 +339,6 @@ public class NotesController {
 
 	}
 
-	public void AuthenticationFlow(RemoteWebDriver driver, NotesPOJO weather, ExtentTest test) throws Exception {
-		try {
-			/*
-			 * logger.info("Start Testcase ==>AuthenticationFlow"); test.log(Status.INFO,
-			 * "In Authentication Page"); LandingPage aup=new LandingPage(driver);
-			 * aup.enterEmail(Practicepojo.getUiEmail());
-			 * aup.enterPassword(Practicepojo.getUiPassword()); aup.clickonSignInButton();
-			 * aup.clickOnProceedCheckout(); aup.clickOnAcceptCheckBox();
-			 * aup.clickOnProcess_ProceedCheckout(); aup.clickOnPayBankWire();
-			 * aup.clickOnIconfirm();
-			 * logger.info("Getting Sucess message as "+aup.getSucessMessage());
-			 * Assert.assertEquals(true,
-			 * aup.getSucessMessage().equals(Practicepojo.getUisucessMessage()));
-			 * 
-			 * test.log(Status.PASS,
-			 * "Validated Sucess message "+Practicepojo.getUisucessMessage());
-			 */
-			logger.info("Finish Testcase ==>AuthenticationFlow");
-		} catch (Exception e) {
-			throw new Exception("Error occured in AuthenticationFlow" + e.getMessage());
-		}
-
-	}
+	
 
 }

@@ -35,14 +35,14 @@ public class SettingsPage {
 
 		List<WebElement> DataLabel = driver.findElements(By.className("android.widget.TextView"));
 		System.out.println(DataLabel.size());
-		/*
-		 * for(WebElement wb:DataLabel) { System.out.println(wb.getText());
-		 * if(wb.getText().equalsIgnoreCase(sData)) {
-		 * ActionBot.focusAndclick(driver,wb); break; }
-		 * 
-		 * 
-		 * }
-		 */}
+		
+		  for(WebElement wb:DataLabel) { System.out.println(wb.getText());
+		  if(wb.getText().equalsIgnoreCase(sData)) {
+		  ActionBot.focusAndclick(driver,wb); break; }
+		  
+		  
+		  }
+		 }
 
 	public void clickOnConfirmMenu() throws Exception {
 		WebElement ConfirmMenu = driver
