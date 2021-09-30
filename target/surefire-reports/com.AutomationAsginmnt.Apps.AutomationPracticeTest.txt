@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.AutomationAsginmnt.Apps.AutomationPracticeTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.17 s - in com.AutomationAsginmnt.Apps.AutomationPracticeTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 4.584 s <<< FAILURE! - in com.AutomationAsginmnt.Apps.AutomationPracticeTest
+launchApp(com.AutomationAsginmnt.Apps.AutomationPracticeTest)  Time elapsed: 3.834 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulagnajee\Downloads\chromedriver
+	at com.AutomationAsginmnt.Apps.AutomationPracticeTest.launchApp(AutomationPracticeTest.java:23)
+

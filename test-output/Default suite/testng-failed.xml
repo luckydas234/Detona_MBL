@@ -3,15 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.weather.assignment.Weather.AutomationPracticeTest">
+      <class name="com.AutomationAsginmnt.Apps.NotesTest">
         <methods>
-          <include name="tempCompareTest"/>
-          <include name="setup"/>
+          <include name="DeleteReminderCheckListNotesTest"/>
+          <include name="EditReminderCheckListNotesTest"/>
+          <include name="DeleteReminderTest"/>
+          <include name="TapToCrashNotesTest"/>
+          <include name="EditImageNotesTest"/>
+          <include name="EditTextNotesTest"/>
+          <include name="DeleteImageNotesTest"/>
           <include name="launchApp"/>
-          <include name="teardown"/>
+          <include name="AddTextNotesTest"/>
+          <include name="setup"/>
+          <include name="AddImageNotesTest"/>
+          <include name="SettingsNotesTest"/>
+          <include name="TagNotesTest"/>
           <include name="getResult"/>
+          <include name="ReducedViewNotesTest"/>
+          <include name="AddCheckListNotesTest"/>
+          <include name="EditTextNotesSetReminderTest"/>
+          <include name="ShareNotesTest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.weather.assignment.Weather.AutomationPracticeTest -->
+      </class> <!-- com.AutomationAsginmnt.Apps.NotesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

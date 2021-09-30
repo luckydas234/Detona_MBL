@@ -3,13 +3,29 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.weather.assignment.Weather.WeatherTest">
+      <class name="com.AutomationAsginmnt.Apps.NotesTest">
         <methods>
-          <include name="teardown"/>
+          <include name="DeleteReminderCheckListNotesTest"/>
+          <include name="EditReminderCheckListNotesTest"/>
+          <include name="DeleteReminderTest"/>
+          <include name="TapToCrashNotesTest"/>
+          <include name="EditImageNotesTest"/>
+          <include name="EditTextNotesTest"/>
+          <include name="DeleteImageNotesTest"/>
+          <include name="launchApp"/>
+          <include name="AddTextNotesTest"/>
           <include name="setup"/>
-          <include name="tempCompareTest"/>
+          <include name="AddImageNotesTest"/>
+          <include name="SettingsNotesTest"/>
+          <include name="TagNotesTest"/>
+          <include name="getResult"/>
+          <include name="ReducedViewNotesTest"/>
+          <include name="AddCheckListNotesTest"/>
+          <include name="EditTextNotesSetReminderTest"/>
+          <include name="ShareNotesTest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.weather.assignment.Weather.WeatherTest -->
+      </class> <!-- com.AutomationAsginmnt.Apps.NotesTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

@@ -1,40 +1,705 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="0" failed="0" skipped="15">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-07T15:54:02 IST" name="Parallel Test Suite" finished-at="2021-08-07T15:54:41 IST" duration-ms="39072">
+  <suite started-at="2021-09-30T14:57:17 IST" name="Default suite" finished-at="2021-09-30T14:57:20 IST" duration-ms="2590">
     <groups>
     </groups>
-    <test started-at="2021-08-07T15:54:02 IST" name="ClassOne" finished-at="2021-08-07T15:54:41 IST" duration-ms="39072">
-      <class name="com.AutomationAsginmnt.Apps.AutomationPracticeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.AutomationAsginmnt.Apps.AutomationPracticeTest@29176cc1]" started-at="2021-08-07T15:54:01 IST" name="setup" finished-at="2021-08-07T15:54:02 IST" duration-ms="349" status="PASS">
+    <test started-at="2021-09-30T14:57:17 IST" name="Default test" finished-at="2021-09-30T14:57:20 IST" duration-ms="2590">
+      <class name="com.AutomationAsginmnt.Apps.NotesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:17 IST" name="setup" finished-at="2021-09-30T14:57:17 IST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.AutomationAsginmnt.Apps.AutomationPracticeTest@29176cc1]" started-at="2021-08-07T15:54:02 IST" name="launchApp" finished-at="2021-08-07T15:54:10 IST" duration-ms="8620" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:17 IST" name="launchApp" finished-at="2021-09-30T14:57:20 IST" duration-ms="2491" status="FAIL">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="testAutomationPracticeTest()[pri:0, instance:com.AutomationAsginmnt.Apps.AutomationPracticeTest@29176cc1]" started-at="2021-08-07T15:54:10 IST" name="testAutomationPracticeTest" finished-at="2021-08-07T15:54:40 IST" duration-ms="29795" status="PASS">
+        <test-method signature="AddTextNotesTest()[pri:1, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="AddTextNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutomationPracticeTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.AutomationPracticeTest@29176cc1]" started-at="2021-08-07T15:54:40 IST" name="getResult" finished-at="2021-08-07T15:54:41 IST" duration-ms="484" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testAutomationPracticeTest status=SUCCESS method=AutomationPracticeTest.testAutomationPracticeTest()[pri:0, instance:com.AutomationAsginmnt.Apps.AutomationPracticeTest@29176cc1] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- AddTextNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040455" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.AutomationAsginmnt.Apps.AutomationPracticeTest@29176cc1]" started-at="2021-08-07T15:54:41 IST" name="teardown" finished-at="2021-08-07T15:54:41 IST" duration-ms="132" status="PASS">
+        <test-method signature="EditTextNotesTest()[pri:2, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="EditTextNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditTextNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040461" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="EditTextNotesSetReminderTest()[pri:3, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="EditTextNotesSetReminderTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditTextNotesSetReminderTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040465" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="DeleteReminderTest()[pri:4, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="DeleteReminderTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteReminderTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040470" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="AddImageNotesTest()[pri:5, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="AddImageNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddImageNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040474" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="EditImageNotesTest()[pri:6, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="EditImageNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditImageNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040479" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="DeleteImageNotesTest()[pri:7, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="DeleteImageNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteImageNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040483" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="AddCheckListNotesTest()[pri:8, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="AddCheckListNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCheckListNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040486" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="EditReminderCheckListNotesTest()[pri:9, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="EditReminderCheckListNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditReminderCheckListNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040490" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="DeleteReminderCheckListNotesTest()[pri:10, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="DeleteReminderCheckListNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteReminderCheckListNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040495" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="ReducedViewNotesTest()[pri:11, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="ReducedViewNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReducedViewNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040499" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="ShareNotesTest()[pri:12, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="ShareNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShareNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040503" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="TagNotesTest()[pri:13, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="TagNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TagNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040507" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="SettingsNotesTest()[pri:14, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="SettingsNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingsNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040511" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="TapToCrashNotesTest()[pri:15, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="TapToCrashNotesTest" finished-at="2021-09-30T14:57:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Exception occured in getMobileDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Exception occured in getMobileDriver
+at com.AutomationAsignment.utility.DefaultDriverManager.getMobileDriver(DefaultDriverManager.java:87)
+at com.AutomationAsginmnt.Apps.NotesTest.launchApp(NotesTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TapToCrashNotesTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040515" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.AutomationAsginmnt.Apps.NotesTest@2ed2d9cb]" started-at="2021-09-30T14:57:20 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1632994040517" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.AutomationAsginmnt.Apps.AutomationPracticeTest -->
-    </test> <!-- ClassOne -->
-  </suite> <!-- Parallel Test Suite -->
+      </class> <!-- com.AutomationAsginmnt.Apps.NotesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

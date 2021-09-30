@@ -1,45 +1,35 @@
 package com.AutomationAsginmnt.Apps;
 
-public class AutomationPracticePOJO {
+public class NotesPOJO {
 
-	private String uiEmail;
-	private String uiPassword;
-	private String uiSize;
-	private String uisucessMessage;
-	private String uiProductCost;
-	public String getUiEmail() {
-		return uiEmail;
+	private String uiTitle;
+	private String uiBody;
+	private String uiTime;
+	private String uiExpResults;
+	public String getUiTitle() {
+		return uiTitle;
 	}
-	public void setUiEmail(String uiEmail) {
-		this.uiEmail = uiEmail;
+	public void setUiTitle(String uiTitle) {
+		this.uiTitle = uiTitle;
 	}
-	public String getUiPassword() {
-		return uiPassword;
+	public String getUiBody() {
+		return uiBody;
 	}
-	public void setUiPassword(String uiPassword) {
-		this.uiPassword = uiPassword;
+	public void setUiBody(String uiBody) {
+		this.uiBody = uiBody;
 	}
-	public String getUiSize() {
-		return uiSize;
+	public String getUiTime() {
+		return uiTime;
 	}
-	public void setUiSize(String uiSize) {
-		this.uiSize = uiSize;
+	public void setUiTime(String uiTime) {
+		this.uiTime = uiTime;
 	}
-	public String getUisucessMessage() {
-		return uisucessMessage;
+	public String getUiExpResults() {
+		return uiExpResults;
 	}
-	public void setUisucessMessage(String uisucessMessage) {
-		this.uisucessMessage = uisucessMessage;
+	public void setUiExpResults(String uiExpResults) {
+		this.uiExpResults = uiExpResults;
 	}
-	public String getUiProductCost() {
-		return uiProductCost;
-	}
-	public void setUiProductCost(String uiProductCost) {
-		this.uiProductCost = uiProductCost;
-	}
-
 	
-
-
 
 }

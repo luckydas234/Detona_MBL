@@ -4,7 +4,7 @@
  
   <test name = "ClassOne">
     <classes>
-      <class name="com.AutomationAsginmnt.Apps.AutomationPracticeTest"/>
+      <class name="com.AutomationAsginmnt.Apps.NotesTest"/>
     </classes>
   </test> <!-- Test -->
   

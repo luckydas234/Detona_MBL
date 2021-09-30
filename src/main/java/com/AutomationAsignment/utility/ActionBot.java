@@ -56,11 +56,13 @@ public class ActionBot {
 		try {
 
 			WebElement ele = waitForElementToBeDisplayed(driver, element, 10);
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].setAttribute('style', arguments[1]);", ele,
-					"color: red; border: 4px solid green;");
-
-			ele.clear();
+			/*
+			 * JavascriptExecutor js = (JavascriptExecutor) driver;
+			 * js.executeScript("arguments[0].setAttribute('style', arguments[1]);", ele,
+			 * "color: red; border: 4px solid green;");
+			 * 
+			 * ele.clear();
+			 */
 			ele.sendKeys(text);
 		} catch (StaleElementReferenceException ex) {
 			logger.error("Stale Element Reference Exception has occurred... Locating element again... ");
@@ -84,9 +86,9 @@ public class ActionBot {
 		try {
 
 			// focus on element
-			new Actions(driver).moveToElement(webElement).perform();
+			//new Actions(driver).moveToElement(webElement).perform();
 			// click on element
-			webElement.click();
+			webElement.click();;
 		} catch (StaleElementReferenceException ex) {
 			logger.error("Stale Element Reference Exception has occurred... Locating element again... ");
 			try {
