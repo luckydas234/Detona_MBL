@@ -1,10 +1,10 @@
-# FASAL_UI_ASIGNMENT
+# DETONA_MOBILE_ASIGNMENT
 
 
 
 ====================
 
-This repositories hosts FASAL UI ASIGNMENT project. This has navigation flOW,filter interactions,drop down interaction,sucessmessage validation
+This repositories hosts DETONA MOBILE ASIGNMENT project. This has navigation flOW,filter interactions,sucessmessage validation
 
 
 Prerequisites
@@ -14,7 +14,9 @@ This project uses Maven for assembling of OSGi bundles based on artifacts in Mav
 any other accessible Maven repository.
 
 1. Install Java (JDK 8 preferred) and Maven.
-2. Clone this repository and go into the repository root folder.
+2.Install SDK.
+3.Install Appium Server
+4. Clone this repository and go into the repository root folder.
 
 
 
@@ -38,7 +40,7 @@ Right click open with any browser
 Tools Used
 -------------
 Language -Java 1.8.0
-Automation Tools- Seleniun 3.14
+Automation Tools-Appium 7.1.0
 UnitTesting_Framework -TestNG 7.3.0
 Reporting- EtentReports 3.0.0
 Logging -Log4j 1.2.17
